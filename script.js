@@ -69,7 +69,7 @@ buttonRollDie.addEventListener("click", updateDie)
 function bankScore() {
     activePlayer.totalScore.textContent = String(Number(activePlayer.totalScore.textContent) + Number(activePlayer.currentScore.textContent));
     activePlayer.currentScore.textContent = "0";
-    if (Number(activePlayer.totalScore.textContent) >= 20) {activePlayer.label.textContent = "🏆 Winner 🏆"}
+    if (Number(activePlayer.totalScore.textContent) >= 100) {activePlayer.label.textContent = "🏆 Winner 🏆"}
     switchActivePlayer();
 }
 buttonBankScore.addEventListener("click", bankScore);
