@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- Linking files -->
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./script.js"></script>
+  
+  <title>Dice Game</title>
+</head>
+<body>
+  <main>
+      <!-- Player 1 section -->
+    <section class="active-player" id="p1-section">
+      <article class="total-score">
+        <h2 id="p1-label">Player 1</h2>
+        <p id="p1-total-score">0</p>
+      </article>
+      <article class="current-score">
+        <h3>Score</h3>
+        <p id="p1-current-score">0</p>
+      </article>
+    </section>
+
+    <!-- Player 2 section -->
+    <section id="p2-section">
+      <article class="total-score">
+        <h2 id="p2-label">Player 2</h2>
+        <p id="p2-total-score">0</p>
+      </article>
+      <article class="current-score">
+        <h3>Score</h3>
+        <p id="p2-current-score">0</p>
+      </article>
+    </section>
+
+    <!-- Absolutely positioned elements -->
+     <!-- NOTE reload page with button -->
+    <button class="absolute" id="button-new-game" onclick="window.location.reload()">🔄 New Game</button>
+    <img id="die-img" class="absolute hidden" src="./assets/dice-6.png" alt="Die with 6 dots" width="300" height="300">
+    <button class="absolute" id="button-roll-die">🎲 Roll Die</button>
+    <button class="absolute" id="button-bank-score">📥 Bank Score</button>
+  </main>
+
+  
+</body>
+</html>
